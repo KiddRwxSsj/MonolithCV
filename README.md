@@ -1,7 +1,4 @@
 # MonolithCV
-A no‑fuss desktop app that turns your CV into a single, perfectly fitted A4 page. Edit live, drag sections, pick templates – all offline, all local.
-
-# MonolithCV
 
 **MonolithCV** is a simple, offline‑first desktop app (built with Electron) that helps you create a professional CV that **always fits on one A4 page**. No sign‑up, no cloud – just you and your data.
 
