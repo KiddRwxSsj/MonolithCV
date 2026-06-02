@@ -1,0 +1,35 @@
+{
+  "name": "monolithcv",
+  "version": "1.0.0",
+  "description": "MonolithCV",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "28.3.3",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.monolithcv.app",
+    "productName": "MonolithCV",
+    "electronVersion": "28.3.3",
+    "electronDist": "vendor/electron",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist/**",
+      "!vendor/electron/*.zip"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "icon": "icon.ico"
+    }
+  }
+}
