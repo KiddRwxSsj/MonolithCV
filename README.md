@@ -1,46 +1,42 @@
 # MonolithCV
 
-**MonolithCV** is a simple, offline-first desktop app built with Electron that helps you create a professional CV that always fits on one A4 page. No sign-up, no cloud — just you and your data.
+MonolithCV is a offline desktop app built with Electron. I made it to help me build a professional CV that actually fits on a single A4 page without having to fight with margins and font sizes.
+
+No sign-ups, no cloud syncing. It just runs on your machine and keeps all the data local.
 
 ## Features
 
-- **Live A4 preview** — see exactly how your CV will look when printed.
-- **Auto-fit** — font sizes, spacing, and margins adjust automatically to fit everything onto one page.
-- **Drag & drop sections** — reorder content directly from the preview.
-- **6 templates** — Minimalist, Compact, Modern, Classic, Tech, and Creative.
-- **Profile photo** — upload, pan, zoom, and choose shape (square, rounded, or circle).
-- **Two-column layout** — enable or disable the sidebar.
-- **Dark mode**
-- **Bilingual UI** — English and Spanish.
-- **Export to PDF** — through the print dialog.
-- **100% local** — everything stays in local storage.
+* **Live A4 preview:** What you see on the screen is exactly what the printed PDF will look like.
+* **Auto-fit:** The app automatically calculates font sizes, spacing, and margins to force your content to fit onto one page.
+* **Drag & drop sections:** Reorder your CV sections directly from the preview pane.
+* **6 Templates:** Choose between Minimalist, Compact, Modern, Classic, Tech, and Creative.
+* **Profile photo editor:** Upload your picture, pan, zoom, and crop it (square, rounded, or circle).
+* **Two-column layout:** Toggle the sidebar on or off depending on how much horizontal space you need.
+* **Dark mode:** Supported out of the box.
+* **Bilingual UI:** Available in English and Spanish.
+* **Local & Private:** Everything is saved to your local storage. You can export directly to PDF through the native print dialog.
 
 ## Current limitations
 
-> **The recent projects panel on the right side of the main menu is not functional yet.**
+The app is fully usable, but there are a few rough edges I'm still working on:
 
-For now, saving and loading projects works like this:
+* The "Recent projects" panel on the main menu is visible but currently non-functional.
+* Saving and loading projects is a bit manual at the moment. 
+  * **To save:** Open the Data tab inside the editor and click `Export Backup` to generate a `.json` file.
+  * **To load:** Click `Import` in the main menu (or `Data -> Import Backup` in the editor) and select your exported `.json` file. 
+  
+I plan to streamline the save/load workflow in a future update.
 
-- **Save a project** → open the **Data** tab inside the editor and click **Export Backup** to generate a `.json` file.
-- **Load a project** → click **Import** in the main menu and select a previously exported `.json` backup, or go to **Data → Import Backup** inside the editor.
+## Usage
 
-This will be improved in a future update.
+### Download the app
+If you just want to create your CV, head over to the [Releases](#) section and download the latest Windows build. 
 
-## Download
-
-If you just want to use the app, download the latest Windows build from the **[Releases](https://github.com/KiddRwxSsj/MonolithCV/releases)** section.
-
-## Run from source
-
-If you want to run the project from source:
+### Run from source
+If you want to run the project locally or modify the code:
 
 ```bash
-git clone https://github.com/KiddRwxSsj/MonolithCV.git
+git clone [https://github.com/KiddRwxSsj/MonolithCV.git](https://github.com/KiddRwxSsj/MonolithCV.git)
 cd MonolithCV
 npm install
 npm start
-```
-
-## AI assistance
-
-Some parts of the code, such as drag-and-drop behavior, auto-fit logic, and local storage handling, were written or improved with the help of an AI assistant. The design decisions and core product direction were human-led.
