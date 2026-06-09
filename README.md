@@ -4,6 +4,10 @@ MonolithCV is a offline desktop app built with Electron. I made it to help me bu
 
 No sign-ups, no cloud syncing. It just runs on your machine and keeps all the data local.
 
+## AI assistance
+
+Some parts of the code, such as drag-and-drop behavior, auto-fit logic, and local storage handling, were written or improved with the help of an AI assistant. The design decisions and core product direction were human-led.
+
 ## Features
 
 * **Live A4 preview:** What you see on the screen is exactly what the printed PDF will look like.
